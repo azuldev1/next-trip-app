@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/azuldev1/next-trip-app/static/css/main.8c2c4a91.chunk.css",
-    "main.js": "/azuldev1/next-trip-app/static/js/main.7edc58e3.chunk.js",
-    "main.js.map": "/azuldev1/next-trip-app/static/js/main.7edc58e3.chunk.js.map",
-    "runtime-main.js": "/azuldev1/next-trip-app/static/js/runtime-main.d4b5f27a.js",
-    "runtime-main.js.map": "/azuldev1/next-trip-app/static/js/runtime-main.d4b5f27a.js.map",
-    "static/js/2.19ebaa15.chunk.js": "/azuldev1/next-trip-app/static/js/2.19ebaa15.chunk.js",
-    "static/js/2.19ebaa15.chunk.js.map": "/azuldev1/next-trip-app/static/js/2.19ebaa15.chunk.js.map",
-    "static/js/3.7347e6c7.chunk.js": "/azuldev1/next-trip-app/static/js/3.7347e6c7.chunk.js",
-    "static/js/3.7347e6c7.chunk.js.map": "/azuldev1/next-trip-app/static/js/3.7347e6c7.chunk.js.map",
-    "index.html": "/azuldev1/next-trip-app/index.html",
-    "static/css/main.8c2c4a91.chunk.css.map": "/azuldev1/next-trip-app/static/css/main.8c2c4a91.chunk.css.map",
-    "static/js/2.19ebaa15.chunk.js.LICENSE.txt": "/azuldev1/next-trip-app/static/js/2.19ebaa15.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/azuldev1/next-trip-app/static/media/logo.6ce24c58.svg"
+    "main.css": "/next-trip-app/static/css/main.8c2c4a91.chunk.css",
+    "main.js": "/next-trip-app/static/js/main.7edc58e3.chunk.js",
+    "main.js.map": "/next-trip-app/static/js/main.7edc58e3.chunk.js.map",
+    "runtime-main.js": "/next-trip-app/static/js/runtime-main.79e3487b.js",
+    "runtime-main.js.map": "/next-trip-app/static/js/runtime-main.79e3487b.js.map",
+    "static/js/2.19ebaa15.chunk.js": "/next-trip-app/static/js/2.19ebaa15.chunk.js",
+    "static/js/2.19ebaa15.chunk.js.map": "/next-trip-app/static/js/2.19ebaa15.chunk.js.map",
+    "static/js/3.7347e6c7.chunk.js": "/next-trip-app/static/js/3.7347e6c7.chunk.js",
+    "static/js/3.7347e6c7.chunk.js.map": "/next-trip-app/static/js/3.7347e6c7.chunk.js.map",
+    "index.html": "/next-trip-app/index.html",
+    "static/css/main.8c2c4a91.chunk.css.map": "/next-trip-app/static/css/main.8c2c4a91.chunk.css.map",
+    "static/js/2.19ebaa15.chunk.js.LICENSE.txt": "/next-trip-app/static/js/2.19ebaa15.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/next-trip-app/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d4b5f27a.js",
+    "static/js/runtime-main.79e3487b.js",
     "static/js/2.19ebaa15.chunk.js",
     "static/css/main.8c2c4a91.chunk.css",
     "static/js/main.7edc58e3.chunk.js"
