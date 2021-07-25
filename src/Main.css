@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 header{
   margin: 20px 0 40px;
   display: grid;
@@ -5,6 +12,11 @@ header{
 }
 .main-wrapper{
   margin: 20px;
+}
+
+.nextTripContainer{
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 

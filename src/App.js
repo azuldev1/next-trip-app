@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './Main.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import Home from './pages/Home.js'
 import NextTrip from './pages/NextTrip.js'
@@ -11,28 +11,17 @@ import NextTrip from './pages/NextTrip.js'
 function App() {
   return (
     <Router>
-      <div class="main-wrapper">
+      <div className="main-wrapper">
         <header>
-          <div>
-            <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Home
-          </a>
-          </div>
-          <div>
-            <a
-              href="/next-trip"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Next Trip
-          </a>
-          </div>
+          <Link to="/">
+            Home
+          </Link>
+          <Link
+            to="/next-trip">
+            Next Trip
+          </Link>
         </header>
-        <div class="content-wrapper">
+        <div className="content-wrapper">
           <Switch>
             <Route path="/next-trip">
               <NextTrip />
