@@ -78,8 +78,8 @@ function TripForm() {
 
   return (
     <div className="nextTripContainer">
+    <div>
       <form>
-
         <FormGroupBit>
           <LabelBit htmlFor="routes">Route:</LabelBit>
           <SelectBit name="selectedRoute" value={form.selectedRoute} id="route" onChange={e => handleInput(e)}>
@@ -102,18 +102,9 @@ function TripForm() {
             }
           </SelectBit>
         </FormGroupBit>
-        <FormGroupBit>
-          <LabelBit htmlFor="stop">Stop:</LabelBit>
-          <SelectBit name="selectedStop" value={form.selectedStop} id="direction" onChange={e => handleInput(e)}>
-            <option value="" defaultValue="">Choose here</option>
-            {
-              stopInfo.map(item => (
-                <option key={item.direction_id} value={item.place_code}>{item.description}</option>
-              ))
-            }
-          </SelectBit>
-        </FormGroupBit>
       </form>
+      </div>
+      <ListUI title="Stop Information" itemList={stopInfo}/>
     </div>
   )
 }
@@ -122,7 +113,6 @@ function NextTrip(props) {
     <div>
       <h1>NEXT TRIP</h1>
       <TripForm />
-      <ListUI />
     </div>
   );
 }

@@ -3,25 +3,39 @@ import styled, { css } from 'styled-components'
 const ListContainer = styled.div`
  display: grid;
  grid-template-columns: 1fr;
- gap: 20px;
+ grid-gap: 0px;
+ border-radius: 6px;
+ box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 `
 const ListTitle = styled.div`
- color: red;
+ font-size: 1.9em;
+ padding: .5em;
+ text-align: center;
+ border-top: 1px solid #dfdfdf;
 `
 const ListHeader = styled.div`
- color: purple;
+ font-size: 1.6em;
+ padding: .5em;
+ text-align: center;
+ border-top: 1px solid #dfdfdf;
 `
 const ListItem = styled.div`
- color: blue;
+ font-size: 1.2em;
+ padding: .5em;
+ text-align: center;
+ border-top: 1px solid #dfdfdf;
 `
 
 
-function ListUI() {
+function ListUI(props) {
     return (
         <ListContainer>
-            <ListTitle>Stop Title</ListTitle>
-            <ListHeader>Destination</ListHeader>
-            <ListItem>route info</ListItem>
+            <ListHeader>{props.header}</ListHeader>
+            {
+                props.itemList.map(item => (
+                <ListItem>{item.description}</ListItem>
+                ))
+            }
         </ListContainer>
     )
 }
