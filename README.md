@@ -18,7 +18,7 @@ App was deployed using netlify.
 [X] Select a direction from selected transit route.
 [X] Implment routing: / and /next-trip
 [] Implement testing
-[] Deploy to publically available URL
+[X] Deploy to publically available URL
 
 ### Enhancements 
 [] Allow user to Select Agency they would like see trip information for
