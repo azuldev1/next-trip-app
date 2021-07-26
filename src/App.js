@@ -12,15 +12,23 @@ function App() {
   return (
     <Router>
       <div className="main-wrapper">
+        <div  className="header-wrapper">
         <header>
-          <Link to="/">
-            Home
-          </Link>
-          <Link
-            to="/next-trip">
-            Next Trip
-          </Link>
+          <div className="header-container">
+            <div>
+              <Link to="/">
+                Home
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/next-trip">
+                Next Trip
+              </Link>
+            </div>
+            </div>
         </header>
+        </div>
         <div className="content-wrapper">
           <Switch>
             <Route path="/next-trip">

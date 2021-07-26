@@ -6,6 +6,7 @@ const ListContainer = styled.div`
  grid-gap: 0px;
  border-radius: 6px;
  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ margin-top: 45px;
 `
 const ListTitle = styled.div`
  font-size: 1.9em;
@@ -18,6 +19,7 @@ const ListHeader = styled.div`
  padding: .5em;
  text-align: center;
  border-top: 1px solid #dfdfdf;
+ font-weight: bold;
 `
 const ListItem = styled.div`
  font-size: 1.2em;
@@ -33,7 +35,7 @@ function ListUI(props) {
             <ListHeader>{props.header}</ListHeader>
             {
                 props.itemList.map(item => (
-                <ListItem>{item.description}</ListItem>
+                <ListItem key={item.place_code}>{item.description}</ListItem>
                 ))
             }
         </ListContainer>

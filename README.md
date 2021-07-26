@@ -1,5 +1,33 @@
 # next-trip-app
 
+React Application that makes use of Metro Transit nexttrip2 api. This web app currrently renders 2 routes, a home page and a next trip page. The next-trip page can be used to get a list of stops for a selected transit route. 
+
+# Technologies Implemented
+* React
+* React Router
+* Styled Components
+* CSS Grids
+
+# Case Study Goals
+
+[X] Select a transit route from a list of available routes.
+[X] Select a direction from selected transit route.
+[X] Implment routing: / and /next-trip
+[] Implement testing
+[] Deploy to publically available URL
+
+### Enhancements 
+[] Allow user to Select Agency they would like see trip information for
+[] Create Theming system around which Agency is selected
+[] Incoporate real time stop infomation into next-trip page
+[] Implement react context to handle selected Agency
+
+
+# Case Study Assumptions
+
+Made a few assumptions with this case study. The first was it was ok to use the create react app for configuring intial React boiler plate. Also I  did not implement a Component Library instead opting to create and stlye custom components. Leveraged styled-components to quickly create and style custom components used within application.    
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -5,18 +5,36 @@
 }
 
 
-header{
-  margin: 20px 0 40px;
-  display: grid;
-  grid-auto-columns: min-content;
+.header-container{
+  display: inline-flex;
+  min-width: 600px;
 }
-.main-wrapper{
-  margin: 20px;
+.header-wrapper{
+  padding: 10px 0 20px;
+  border-bottom: 3px solid gray;
+}
+header{
+  max-width: 900px;
+  margin: auto;
+}
+header div{
+  padding: 5px 25px;
+}
+header a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .nextTripContainer{
   max-width: 600px;
-  margin: 0 auto;
+  margin: 30px auto 0;
+}
+
+.content-wrapper{
+  max-width: 800px;
+  padding: .5em 1em;
+  margin: auto;
 }
 
 

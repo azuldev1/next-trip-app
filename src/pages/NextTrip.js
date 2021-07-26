@@ -15,6 +15,8 @@ function TripForm() {
   const [direction, setDirection] = useState([]);
   const [stopInfo, setStopInfo] = useState([]);
 
+  const [tripTitle, setTripTitle] = useState("");
+
   useEffect(() => {
     async function getRouteData() {
       const fetchRoute = await axios(
@@ -37,7 +39,6 @@ function TripForm() {
   }, [form, setDirection, setForm]);
 
   useEffect(() => {
-    console.log("stop info")
     async function getStopInfoData(routeId, direction) {
       const fetchInfo = await axios(
         'https://svc.metrotransit.org/nextripv2/stops/' + routeId + "/" + direction
@@ -54,6 +55,15 @@ function TripForm() {
     }
     filterRoutesByAgency()
   }, [route]);
+
+  useEffect(() => {
+    function  getListTitle(routeId, directionSelected) {
+      const routeInfo = routeByAgency.find( item => item.route_id === routeId)
+      const directionInfo = direction.find( item => item.direction_id === parseInt(directionSelected))
+      setTripTitle(routeInfo.route_label + " : " + directionInfo.direction_name)
+    }
+    if (form.selectedRoute && form.selectedDirection) getListTitle(form.selectedRoute, form.selectedDirection)
+  }, [form]);
 
   const handleInput = (e) => {
     const { name, value } = e.target
@@ -104,7 +114,14 @@ function TripForm() {
         </FormGroupBit>
       </form>
       </div>
-      <ListUI title="Stop Information" itemList={stopInfo}/>
+      
+      {
+      
+        form.selectedRoute && form.selectedDirection ? 
+        <ListUI header={tripTitle} itemList={stopInfo}/> : ''
+      
+      }
+          
     </div>
   )
 }
