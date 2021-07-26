@@ -2,7 +2,9 @@
 
 React Application that makes use of Metro Transit nexttrip2 api. This web app currrently renders 2 routes, a home page and a next trip page. The next-trip page can be used to get a list of stops for a selected transit route.
 
-***You can find a deployed version of the app here : [Next - Trip App](https://elastic-ride-c03be1.netlify.app/next-trip).*** App was deployed using netlify,
+***You can find a deployed version of the app here : [Next - Trip App](https://elastic-ride-c03be1.netlify.app).*** 
+
+App was deployed using netlify.
 
 # Technologies Implemented
 * React
