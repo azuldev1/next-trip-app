@@ -63,12 +63,11 @@ function TripForm() {
       setTripTitle(routeInfo.route_label + " : " + directionInfo.direction_name)
     }
     if (form.selectedRoute && form.selectedDirection) getListTitle(form.selectedRoute, form.selectedDirection)
-  }, [form]);
+  }, [form, direction, routeByAgency]);
 
   const handleInput = (e) => {
     const { name, value } = e.target
-
-    if (name === "selectedRoute" && !value) {
+    if ( (name === "selectedRoute" && value !== '') || (name === "selectedRoute" && form.selectedRoute !== value)) {
       setForm(
         {
           ...form,
@@ -114,14 +113,9 @@ function TripForm() {
         </FormGroupBit>
       </form>
       </div>
-      
       {
-      
-        form.selectedRoute && form.selectedDirection ? 
-        <ListUI header={tripTitle} itemList={stopInfo}/> : ''
-      
-      }
-          
+        form.selectedDirection && form.selectedRoute ?  <ListUI header={tripTitle} itemList={stopInfo}/> : ''
+      }   
     </div>
   )
 }

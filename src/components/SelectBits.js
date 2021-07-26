@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const FormGroupBit = styled.div`
     display: grid;
@@ -19,7 +19,7 @@ const SelectBit = styled.select`
     min-width: 15ch;
     max-width: 40ch;
     min-height: 5ch;
-    box-shadow: 0px 0px 2px blue;
+    box-shadow: 0px 0px 2px #696969;
     border: none;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
@@ -27,10 +27,9 @@ const SelectBit = styled.select`
     cursor: pointer;
     line-height: 1.1;
     background-color: #fff;
-    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
     &:focus {
         outline: none;
-        box-shadow: 0px 0px 2px red;
+        box-shadow: 0px 0px 2px #77b5fe;
     }
     @media (max-width: 780px) {
         grid-template-columns: 1fr;

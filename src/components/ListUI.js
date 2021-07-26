@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const ListContainer = styled.div`
  display: grid;
@@ -7,12 +7,6 @@ const ListContainer = styled.div`
  border-radius: 6px;
  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
  margin-top: 45px;
-`
-const ListTitle = styled.div`
- font-size: 1.9em;
- padding: .5em;
- text-align: center;
- border-top: 1px solid #dfdfdf;
 `
 const ListHeader = styled.div`
  font-size: 1.6em;

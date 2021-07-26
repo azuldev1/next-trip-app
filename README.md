@@ -14,11 +14,11 @@ App was deployed using netlify.
 
 # Case Study Goals
 
-[X] Select a transit route from a list of available routes.
-[X] Select a direction from selected transit route.
-[X] Implment routing: / and /next-trip
-[] Implement testing
-[X] Deploy to publically available URL
+- [X] Select a transit route from a list of available routes.
+- [X] Select a direction from selected transit route.
+- [X] Implment routing: / and /next-trip
+- [] Implement testing
+- [X] Deploy to publically available URL
 
 ### Enhancements 
 [] Allow user to Select Agency they would like see trip information for
