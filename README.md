@@ -17,14 +17,14 @@ App was deployed using netlify.
 - [X] Select a transit route from a list of available routes.
 - [X] Select a direction from selected transit route.
 - [X] Implment routing: / and /next-trip
-- [] Implement testing
+- [ ] Implement testing
 - [X] Deploy to publically available URL
 
 ### Enhancements 
-[] Allow user to Select Agency they would like see trip information for
-[] Create Theming system around which Agency is selected
-[] Incoporate real time stop infomation into next-trip page
-[] Implement react context to handle selected Agency
+[ ] Allow user to Select Agency they would like see trip information for
+[ ] Create Theming system around which Agency is selected
+[ ] Incoporate real time stop infomation into next-trip page
+[ ] Implement react context to handle selected Agency
 
 
 # Case Study Assumptions
