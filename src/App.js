@@ -23,7 +23,7 @@ function App() {
             <div>
               <Link
                 to="/next-trip">
-                Next Trip
+                Next Trip 0.0.1
               </Link>
             </div>
             </div>
